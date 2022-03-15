@@ -11,10 +11,10 @@
 <div id="testCmp">
   </div>
   <script>
-$Lightning.use("c:locorsApp", // name of the Lightning app
+$Lightning.use("c:loapp", // name of the Lightning app
 function() { // Callback once framework and app loaded
 $Lightning.createComponent(
-"c:locors", // top-level component of your app
+"c:locmp", // top-level component of your app
 { }, // attributes to set on the component when created
 "testCmp", // the DOM location to insert the component
 function(cmp) {
@@ -22,7 +22,8 @@ function(cmp) {
 }
 );
 },
-         'https://m1lc-developer-edition.mobile1.t.force.com' // Community endpoint
+         'https://lo1-dev-ed.lightning.stmfa.stm.force.com' ,// Community endpoint
+         '00DD20000000aJw!AQoAQOLPkfk_veq29XTGvN8L2ikO3MwxyUfP0D90_xlIOl4UEE7q39_.qqme4yN5LaK5U_wvh8oLdrUEtSfnHg4NlVzWEcVK'
 );
 </script>   
 </body>
