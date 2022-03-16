@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+ <body>
+<script src="https://lo1-dev-ed.lightning.stmfa.stm.force.com/lightning/lightning.out.js"></script>
+<div ng-app="myApp" ng-controller="myCtrl"> 
+
+<p>Today's welcome message is:</p>
+<div ng-bind-html="rawHtml">{{myWelcome}}</div>
+
+</div>
+<div id="testCmp">
+  </div>
+  <script>
+$Lightning.use("c:loapp", // name of the Lightning app
+function() { // Callback once framework and app loaded
+$Lightning.createComponent(
+"c:locmp", // top-level component of your app
+{ }, // attributes to set on the component when created
+"testCmp", // the DOM location to insert the component
+function(cmp) {
+// callback when component is created and active on the page
+}
+);
+},
+         'https://lo1-dev-ed.lightning.stmfa.stm.force.com' ,// Community endpoint
+         '00DD20000000aJw!AQoAQNOG.ylID0M9S__0E5yfoRkISWhZRPDS6FjW8qkzkIQcEFA.631ClLDRAf2IiBvOiu.tZcK.UB9B2D4hkkH9lmkvesph'
+);
+</script>   
+</body>
+</html>
